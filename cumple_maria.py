@@ -17,14 +17,17 @@ def main():
 
 	st.header("Información Util para tu cumpleaños")
 
-	st.header("""
-		1 Foto de nuestra reserva 
+	st.header("""Vamos por pasos:
 
-		2 Foto de los exteriores del hotel 
+		1 Video
+
+		2 Foto de nuestra reserva 
+
+		3 Foto de los exteriores del hotel 
 		
-		3 Foto de la habitación
+		4 Foto de la habitación
 		
-		4 Foto de la piscina y relax 
+		5 Foto de la piscina y relax 
 		""")
 
 	video = open("video.mp4","rb").read()
@@ -34,15 +37,14 @@ def main():
 	options = st.multiselect(
 			'Cuantos km hay entre Elche y Pamplona en linea recta?',
 			('650', '730', '590', '742'))
-	
-	while options == "742":
-		if options == "742":
-			st.success('Has acertado, muy bien!!!')
-			st.write("""Aqui tienes
+
+	if options == "742":
+		st.success('Has acertado, muy bien!!!')
+		st.write("""Aqui tienes
 				tu primer regalito:""" , options)
-			st.video(video)
-		else:
-			st.write("Vuelve a intentarlo cariño")
+		st.video(video)
+	else:
+		st.write("Vuelve a intentarlo cariño")
 
 		
 
@@ -50,47 +52,46 @@ def main():
 
 	st.write('Foto de nuestra reserva')
 
-
-
-	img = ("Regalo/datos_reserva.png")
-	imagen(img)
-
-
+	st.header("Info de la resrva")
 
 	img = ("Regalo/datos_reserva.png")
 	imagen(img)
 
+	st.header("Fotos del Hotel")
 
-	img = ("Regalo/foto_hotel_1.png")
-	imagen(img)
-
-
-	img = ("Regalo/foto_hotel_2.png")
-	imagen(img)
+	img_2 = ("Regalo/foto_hotel_1.png")
+	imagen(img_2)
 
 
-	img = ("Regalo/foto_hotel_3.png")
-	imagen(img)
-
-	img = ("Regalo/habitacion.png")
-	imagen(img)
+	img_3 = ("Regalo/foto_hotel_2.png")
+	imagen(img_3)
 
 
-	img = ("Regalo/piscina_1.png")
-	imagen(img)
+	img_4 = ("Regalo/foto_hotel_3.png")
+	imagen(img_4)
+
+	st.header("Foto de nuestra habitacion")
+
+	img_5 = ("Regalo/habitacion.png")
+	imagen(img_5)
+
+	st.header("Piscina")
+
+	img_6 = ("Regalo/piscina_1.png")
+	imagen(img_6)
 
 
-	img = ("Regalo/piscina_2.png")
-	imagen(img)
+	img_7 = ("Regalo/piscina_2.png")
+	imagen(img_7)
+
+	st.header("Y un poquito de relax")
+
+	img_8 = ("Regalo/relax_1.png")
+	imagen(img_8)
 
 
-
-	img = ("Regalo/relax_1.png")
-	imagen(img)
-
-
-	img = ("Regalo/relax_1.png")
-	imagen(img)
+	img_8 = ("Regalo/relax_1.png")
+	imagen(img_9)
 
 
 
