@@ -30,12 +30,12 @@ def main():
 	video = open("video.mp4","rb").read()
 
 	st.write("Vamos a ponerte un poco a prueba")
-	
-	while options == "742":
-		options = st.multiselect(
+
+	options = st.multiselect(
 			'Cuantos km hay entre Elche y Pamplona en linea recta?',
 			('650', '730', '590', '742'))
-		
+	
+	while options == "742":
 		if options == "742":
 			st.success('Has acertado, muy bien!!!')
 			st.write("""Aqui tienes
