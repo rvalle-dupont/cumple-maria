@@ -19,7 +19,7 @@ def main():
 
 	st.header("""Vamos por pasos:
 
-		1 Video
+		1 Video + audio para el recuerdo
 
 		2 Foto de nuestra reserva 
 
@@ -42,11 +42,19 @@ def main():
 		st.success('Has acertado, muy bien!!!')
 		st.write("""Aqui tienes
 				tu primer regalito:""" , options)
-		st.video(video)
-	else:
-		st.write("Vuelve a intentarlo cariño")
 
-		
+	if st.checkbox('Enseñame el video o que? '):
+
+    	st.subheader('Video molon')
+
+    	video = open("video.mp4","rb").read()
+
+    	st.video(video)
+
+	audio_file = open('myaudio.ogg', 'rb')
+	audio_bytes = audio_file.read()
+
+	st.audio(audio_bytes, format='audio/ogg')
 
 	st.header("Y esta año, ¿A donde nos vamos?")
 
@@ -54,47 +62,47 @@ def main():
 
 	st.header("Info de la resrva")
 
-	img = ("Regalo/datos_reserva")
+	img = ("datos_reserva.png")
 	imagen(img)
 
 	st.header("Fotos del Hotel")
 
-	img_1 = ("Regalo/foto_prin.png")
+	img_1 = ("foto_prin.png")
 	imagen(img_1)
 
 
-	img_2 = ("Regalo/foto_hotel_1")
+	img_2 = ("foto_hotel_1.png")
 	imagen(img_2)
 
 
-	img_3 = ("Regalo/foto_hotel_2")
+	img_3 = ("foto_hotel_2.png")
 	imagen(img_3)
 
 
-	img_4 = ("Regalo/foto_hotel_3")
+	img_4 = ("foto_hotel_3.png")
 	imagen(img_4)
 
 	st.header("Foto de nuestra habitacion")
 
-	img_5 = ("Regalo/habitacion.png")
+	img_5 = ("habitacion.png")
 	imagen(img_5)
 
 	st.header("Piscina")
 
-	img_6 = ("Regalo/piscina_1")
+	img_6 = ("piscina_1.png")
 	imagen(img_6)
 
 
-	img_7 = ("Regalo/piscina_2.png")
+	img_7 = ("piscina_2.png")
 	imagen(img_7)
 
 	st.header("Y un poquito de relax")
 
-	img_8 = ("Regalo/relax_1.png")
+	img_8 = ("relax_1.png")
 	imagen(img_8)
 
 
-	img_8 = ("Regalo/relax_1.png")
+	img_8 = ("relax_1.png")
 	imagen(img_9)
 
 
