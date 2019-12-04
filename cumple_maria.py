@@ -32,16 +32,17 @@ def main():
 	st.write("Vamos a ponerte un poco a prueba")
 	
 	while options == "742":
-
 		options = st.multiselect(
-	...     'Cuantos km hay entre Elche y Pamplona en linea recta?',
-	...     ('650', '730', '590', '742'))
+			'Cuantos km hay entre Elche y Pamplona en linea recta?',
+			('650', '730', '590', '742'))
 		
 		if options == "742":
 			st.success('Has acertado, muy bien!!!')
 			st.write("""Aqui tienes
 				tu primer regalito:""" , options)
 			st.video(video)
+		else:
+			st.write("Vuelve a intentarlo cariño")
 
 		
 
