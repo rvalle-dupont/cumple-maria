@@ -39,15 +39,9 @@ def main():
 	options = st.multiselect(
 			'Cuantos km hay entre Elche y Pamplona en linea recta?',
 			(650, 730, 590, 742))
-
-	if options == 742:
-		st.success('Has acertado, muy bien!!!')
-		st.write("""Aqui tienes
-				tu primer regalito:""" , options)
-
-	if st.checkbox('Enseñame el video o que? '):
-		video = open("video.mp4","rb").read()
-    	st.video(video)
+	
+    video = open("video.mp4","rb").read()
+    st.video(video)
 
 	audio_file = open('myaudio.ogg', 'rb')
 	audio_bytes = audio_file.read()
