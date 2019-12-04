@@ -29,10 +29,21 @@ def main():
 
 	video = open("video.mp4","rb").read()
 
-	if st.button('Quiero ver ese video, for sure!'):
-    	st.video(video)
-	else:
-		st.write('Pues Na')
+	st.write("Vamos a ponerte un poco a prueba")
+	
+	while options == "742":
+
+		options = st.multiselect(
+	...     'Cuantos km hay entre Elche y Pamplona en linea recta?',
+	...     ('650', '730', '590', '742'))
+		
+		if options == "742":
+			st.success('Has acertado, muy bien!!!')
+			st.write("""Aqui tienes
+				tu primer regalito:""" , options)
+			st.video(video)
+
+		
 
 	st.header("Y esta año, ¿A donde nos vamos?")
 
