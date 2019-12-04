@@ -1,9 +1,6 @@
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
-import nltk
 from IPython.display import Image #imagenes
-import xlrd
 
 def imagen(img):
     Image(url=img)
@@ -13,7 +10,6 @@ def imagen(img):
 def main():
 
     st.title('FELIZ CUMPLEAÑOS MI AMOR')
-
 
     st.header("Información Util para tu cumpleaños")
 
@@ -93,7 +89,7 @@ def main():
     imagen(img_8)                         
                              
                             
-    img_8 = ("relax_1.png")
+    img_9 = ("relax_1.png")
     imagen(img_9)
                              
                              
@@ -115,6 +111,7 @@ def main():
                 das, tener una opinio similar a la que yo tengo hacia tu persona. Con todo esto,
                 no me enrollo más, cariño mio, te deseo, FELICES 23 años mi amor, te quiero mucho!!!""")
 
+    st.title('TE QUIERO MUCHO, FELICES "· AÑAZOS')
 
 
 if __name__ == "__main__":
