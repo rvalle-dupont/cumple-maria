@@ -59,6 +59,10 @@ def main():
 
 	st.header("Fotos del Hotel")
 
+	img_1 = ("Regalo/foto_prin.png")
+	imagen(img_1)
+
+
 	img_2 = ("Regalo/foto_hotel_1.png")
 	imagen(img_2)
 
