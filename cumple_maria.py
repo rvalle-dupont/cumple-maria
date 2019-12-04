@@ -28,6 +28,8 @@ def main():
 		4 Foto de la habitación
 		
 		5 Foto de la piscina y relax 
+
+		6 Ñoñadas
 		""")
 
 	video = open("video.mp4","rb").read()
@@ -44,11 +46,7 @@ def main():
 				tu primer regalito:""" , options)
 
 	if st.checkbox('Enseñame el video o que? '):
-
-    	st.subheader('Video molon')
-
-    	video = open("video.mp4","rb").read()
-
+		video = open("video.mp4","rb").read()
     	st.video(video)
 
 	audio_file = open('myaudio.ogg', 'rb')
@@ -104,6 +102,25 @@ def main():
 
 	img_8 = ("relax_1.png")
 	imagen(img_9)
+
+
+	st.header("Ñoñadas")
+
+
+	st.write(""" Bueno cariño, espero que este viaje, pese a que a priori no estuviese
+		en nuestra lista de deseos, lo disfrutes como todos aquellos de tus sueños que
+		por suerte, me ha tocado vivir a tu lado. Esto suena tal vez un poco ñoñis, pero
+		yo me muero de ganas de poder ver como todos y cada uno de tus sueños se hacen
+		realidad a mi lado. Te doy las gracias por todo este tiempo, te doy las gracias 
+		por ser tu misma, por ser cariñosa, por preocuparte, por ser amable, una incre-
+		ible compañera de vida. Me encanta ver todos y cada uno de los días tu sonrisa,
+		tus ganas de crecer, tus ganas de viajar, tus ganas de amar, de cuidar al resto,
+		sin importar el que te daran a cambio, en general, me encanta pasar los días a
+		tu lado. Eres una persona que me llena, que me hace sentirme querido, y sobre 
+		todo, que me hace feliz. Yo espero, que año tras año, aun que te vayas haciendo
+		vieja antes que yo, sientas y veas la vida con ojos similares a los mios, y pue-
+		das, tener una opinio similar a la que yo tengo hacia tu persona. Con todo esto,
+		no me enrollo más, cariño mio, te deseo, FELICES 23 años mi amor, te quiero mucho!!!""")
 
 
 
