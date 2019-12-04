@@ -36,9 +36,9 @@ def main():
 
 	options = st.multiselect(
 			'Cuantos km hay entre Elche y Pamplona en linea recta?',
-			('650', '730', '590', '742'))
+			(650, 730, 590, 742))
 
-	if options == "742":
+	if options == 742:
 		st.success('Has acertado, muy bien!!!')
 		st.write("""Aqui tienes
 				tu primer regalito:""" , options)
@@ -54,7 +54,7 @@ def main():
 
 	st.header("Info de la resrva")
 
-	img = ("Regalo/datos_reserva.png")
+	img = ("Regalo/datos_reserva")
 	imagen(img)
 
 	st.header("Fotos del Hotel")
@@ -63,15 +63,15 @@ def main():
 	imagen(img_1)
 
 
-	img_2 = ("Regalo/foto_hotel_1.png")
+	img_2 = ("Regalo/foto_hotel_1")
 	imagen(img_2)
 
 
-	img_3 = ("Regalo/foto_hotel_2.png")
+	img_3 = ("Regalo/foto_hotel_2")
 	imagen(img_3)
 
 
-	img_4 = ("Regalo/foto_hotel_3.png")
+	img_4 = ("Regalo/foto_hotel_3")
 	imagen(img_4)
 
 	st.header("Foto de nuestra habitacion")
@@ -81,7 +81,7 @@ def main():
 
 	st.header("Piscina")
 
-	img_6 = ("Regalo/piscina_1.png")
+	img_6 = ("Regalo/piscina_1")
 	imagen(img_6)
 
 
