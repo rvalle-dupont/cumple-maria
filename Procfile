@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run test-ttf.py
+web: sh setup.sh && streamlit run cumple_maria.py

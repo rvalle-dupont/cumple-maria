@@ -6,13 +6,11 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-pandas = "*"
 streamlit = "*"
+pandas = "*"
+ipython = "*"
 nltk = "*"
 matplotlib = "*"
-ipython = "*"
-wordcloud = "*"
-xlrd = "*"
 
 [requires]
 python_version = "3.7"
